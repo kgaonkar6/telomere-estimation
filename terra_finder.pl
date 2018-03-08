@@ -1,3 +1,4 @@
+#lopezgarcg@email.chop.edu
 #!/usr/bin/perl
 
 ##  count reads containing telomeric repeats 
