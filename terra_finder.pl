@@ -1,4 +1,5 @@
 #lopezgarcg@email.chop.edu
+#add to dockerhub
 #!/usr/bin/perl
 
 ##  count reads containing telomeric repeats 
