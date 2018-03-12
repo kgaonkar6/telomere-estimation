@@ -28,4 +28,5 @@ RUN cpanm CPAN::Meta \
 WORKDIR /
 
 #add scripts
-ADD terra_finder.pl /terra_finder.pl
+ADD terra_finder.pl ./terra_finder.pl
+
