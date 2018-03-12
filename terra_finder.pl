@@ -11,7 +11,7 @@
 use strict;
 use IO::Zlib;	# read gzipped files
 
-
+#requires package
 tie *FILE1, 'IO::Zlib', $ARGV[0], "rb";		# fastq1
 tie *FILE2, 'IO::Zlib', $ARGV[1], "rb";		# fastq2
 my $libsize=0;
