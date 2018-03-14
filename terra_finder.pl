@@ -36,10 +36,7 @@ do{ $libsize++;
 	} until eof;
 
 # print every fingerprint and the read count associated to it 
-my @name=split(".",$ARGV[0]);
-#added extension
-my $outputfile=$name[0].".txt";
-open(OUT, $outputfile);
+open(OUT,">$ARGV[2]");
 foreach my$k(keys%match){
 	print OUT $k,"\t",$match{$k},"\n";
 	}
