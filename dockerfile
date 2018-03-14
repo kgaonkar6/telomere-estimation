@@ -25,8 +25,8 @@ RUN apt-get install -y libmysqlclient-dev
 RUN cpanm CPAN::Meta \
       IO::Zlib
 
-WORKDIR /
+WORKDIR /opt
 
 #add scripts
-ADD terra_finder.pl ./terra_finder.pl
+ADD terra_finder.pl /opt/terra_finder.pl
 
