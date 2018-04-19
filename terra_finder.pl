@@ -25,11 +25,14 @@ do{ $libsize++;
 	my $line = ($libsize -2)/4;
 	if($line  =~ /^-?\d+$/){
 		#print "$line\t$r1";
+		my $gc1 = () = $r1 =~ /C|G/gi;
+                my $gc2 = () = $r2 =~ /C|G/gi;
+                my $gcc = sprintf("%d",($gc1+$gc2) * 50/length($r2));
 		my $na1 = () = $r1 =~ /TTAGGG/gi;
 		my $na2 = () = $r2 =~ /TTAGGG/gi;
 		my $nb1 = () = $r1 =~ /CCCTAA/gi;
 		my $nb2 = () = $r2 =~ /CCCTAA/gi;
-		my $key1="$na1\_$nb1\_$na2\_$nb2";
+		my $key1="$na1\_$nb1\_$na2\_$nb2\_$gcc";
 		if(exists$match{$key1} ){$match{$key1}++;}
 		else{$match{$key1} = 1;}
 		}
